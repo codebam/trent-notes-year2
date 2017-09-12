@@ -39,3 +39,28 @@ a = new Animal(..);
     - char
     - bool
     - ...
+
+- virtual allows the child to override
+
+``` csharp
+public virtual void M() {} // parent
+public override void M() {} // child
+```
+
+- at the  very top is class object
+- everything derives from the object class
+
+- Methods in the object class
+    - Equals
+    - Finalize
+    - GetHashCode
+    - GetType
+    - MemberwiseClone
+    - ReferenceEquals
+    - ToString
+
+- abstract
+    - has no body
+    - can't create an object from an abstract class
+    - you inherit from it and write the method
+    - interfaces are always abstract and are all public
